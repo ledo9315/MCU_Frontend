@@ -1,0 +1,13 @@
+// ******* BASE *******
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+@import "./base/_variables.scss";
+
+// ******* BLOCKS *******
+@import "./blocks/_header.scss";
+@import "./blocks/_main.scss";
+
+// ******* COMPONENTS *******
+@import "./components/_fonts.scss";
+@import "./components/_hamburger.scss";
+@import "./components/_button.scss";

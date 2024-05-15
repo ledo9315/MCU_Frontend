@@ -1,0 +1,341 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  color: var(--color-white);
+  font-family: "Roboto Condensed";
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+:root {
+  --color-white: #fff;
+  --color-accent: #b61313;
+  --color-background: #141316;
+  --font-roboto: "RobotoCondensed", sans-serif;
+  --font-open-sans: "OpenSans", sans-serif;
+  --font-weight-reg: 400;
+  --font-weight-bold: 700;
+}
+
+.header__nav {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  justify-self: flex-start;
+}
+@media (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.header__logo {
+  justify-self: center;
+}
+
+.header__search-button {
+  justify-self: flex-end;
+}
+
+.main__content {
+  display: grid;
+}
+
+.main__image {
+  justify-self: center;
+  margin-bottom: 30px;
+}
+
+.main__iron-man-img {
+  max-width: 300px;
+}
+
+.main__blur-bg {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main__title {
+  font-size: 2rem;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main__title span {
+  color: var(--color-accent);
+}
+
+.main__description,
+.explore__description {
+  font-family: var(--font-open-sans);
+  color: var(--color-white);
+  line-height: 1.4;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.explore__h2 {
+  margin-bottom: 30px;
+}
+.explore__h2 span {
+  color: var(--color-accent);
+}
+
+.explore__img {
+  margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../../fonts/RobotoCondensed-VariableFont_wght.woff2") format("woff2"), url("../../fonts/RobotoCondensed-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../../fonts/OpenSans-VariableFont_wdth,wght.woff2") format("woff2"), url("../../fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-white);
+}
+
+@media (max-width: 960px) {
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

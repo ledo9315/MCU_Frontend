@@ -1,0 +1,24 @@
+.header__nav {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  justify-self: flex-start;
+
+  @media (max-width: 960px) {
+    display: block;
+  }
+}
+
+.header__logo {
+  justify-self: center;
+}
+
+.header__search-button {
+  justify-self: flex-end;
+}
