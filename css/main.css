@@ -464,16 +464,19 @@ section {
 }
 
 .explore__h2,
-.filme___h2 {
+.filme___h2,
+.heroes__h2 {
   margin-bottom: 30px;
 }
 .explore__h2 span,
-.filme___h2 span {
+.filme___h2 span,
+.heroes__h2 span {
   color: var(--color-accent);
 }
 @media screen and (min-width: 960px) {
   .explore__h2,
-  .filme___h2 {
+  .filme___h2,
+  .heroes__h2 {
     align-self: flex-start;
   }
 }
@@ -550,7 +553,7 @@ section {
 
 .heroes__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
   justify-items: center;
 }

@@ -93,7 +93,8 @@
 }
 
 .explore__h2,
-.filme___h2 {
+.filme___h2,
+.heroes__h2 {
   margin-bottom: 30px;
 
   & span {
@@ -179,7 +180,7 @@
 
 .heroes__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 20px;
   justify-items: center;
 
