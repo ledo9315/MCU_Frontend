@@ -126,7 +126,7 @@
 
 .filme__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   justify-items: center;
   gap: 20px;
   perspective: 1000px; /* Hinzugefügt für 3D-Effekt */
@@ -180,7 +180,7 @@
 
 .heroes__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   gap: 20px;
   justify-items: center;
 
