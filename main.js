@@ -46,16 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 });
 
-function toggleSearch() {
-  var searchInput = document.getElementById("searchInput");
-  if (searchInput.style.display === "block") {
-    searchInput.style.display = "none";
-  } else {
-    searchInput.style.display = "block";
-    searchInput.focus();
-  }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   let lastScrollTop = 0; // Position des letzten Scrolls speichern
   const header = document.querySelector(".header"); // Die Header-Element selektieren
@@ -70,5 +60,37 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("header--hidden");
     }
     lastScrollTop = scrollTop;
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let lastScrollTop = 0;
+  const header = document.querySelector(".header");
+  const searchInput = document.querySelector(".header__search-input");
+  const searchButton = document.querySelector(".header__search-button");
+
+  searchButton.addEventListener("click", function () {
+    const isDisplayed = searchInput.style.display === "block";
+    searchInput.style.display = isDisplayed ? "none" : "block";
+    if (!isDisplayed) {
+      searchInput.focus();
+    }
+  });
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if scrolling down and not at the top of the page
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+      header.classList.add("header--hidden");
+    } else {
+      header.classList.remove("header--hidden");
+    }
+    lastScrollTop = scrollTop;
+
+    // Zusätzlich wird die Suchleiste ausgeblendet, wenn gescrollt wird
+    if (searchInput.style.display === "block") {
+      searchInput.style.display = "none";
+    }
   });
 });

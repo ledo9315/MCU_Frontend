@@ -206,7 +206,7 @@ img {
 
 h2 {
   color: var(--color-white);
-  font-family: "Roboto Condensed";
+  font-family: var(--font-roboto);
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
@@ -271,7 +271,34 @@ section {
 }
 
 .header__search-button {
-  justify-self: flex-end;
+  position: relative;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.header__search-input {
+  position: absolute;
+  right: 30px;
+  top: -5px;
+  height: 40px;
+  font-size: 16px;
+  display: none; /* Verborgen bis der Button geklickt wird */
+  border: 1px solid var(--color-grey);
+  margin-right: 10px;
+  padding: 0 10px;
+}
+@media screen and (max-width: 960px) {
+  .header__search-input {
+    top: 60px;
+    right: -10px;
+  }
+}
+
+.header__search-input:active,
+.header__search-input:focus {
+  border-color: var(--color-accent);
 }
 
 .header__nav-list {
