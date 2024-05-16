@@ -41,6 +41,11 @@
   display: flex;
   justify-content: center;
   column-gap: 30px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__social-link img {
