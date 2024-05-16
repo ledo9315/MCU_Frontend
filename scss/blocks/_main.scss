@@ -10,7 +10,7 @@
     grid-template-columns: 1.5fr 1fr;
   }
   //animation mit delay
-  animation: bounceInDown 1s 0.5s both;
+  animation: bounceInDown 1.5s 0.5s both;
 }
 
 .introduction__image {
@@ -83,7 +83,6 @@
 
 .explore__text {
   grid-area: text;
-  animation: bounceInRight 1s 1.5s both;
 }
 
 .explore__img {
@@ -94,8 +93,6 @@
     margin-bottom: 20px;
     align-self: center;
   }
-
-  animation: bounceInLeft 1s 1.5s both;
 }
 
 .explore__description {

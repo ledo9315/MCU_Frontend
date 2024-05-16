@@ -214,6 +214,7 @@ h1 {
   font-family: var(--font-roboto);
   color: var(--color-white);
   margin-bottom: 20px;
+  line-height: normal;
 }
 @media screen and (min-width: 960px) {
   h1 {
@@ -227,6 +228,7 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  line-height: normal;
   margin-bottom: 20px;
 }
 h2 span {
@@ -404,7 +406,7 @@ section {
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  animation: bounceInDown 1s 0.5s both;
+  animation: bounceInDown 1.5s 0.5s both;
 }
 @media screen and (min-width: 730px) {
   .introduction__content {
@@ -481,13 +483,11 @@ section {
 
 .explore__text {
   grid-area: text;
-  animation: bounceInRight 1s 1.5s both;
 }
 
 .explore__img {
   grid-area: image;
   margin-bottom: 30px;
-  animation: bounceInLeft 1s 1.5s both;
 }
 @media screen and (min-width: 960px) {
   .explore__img {
@@ -771,56 +771,6 @@ button {
   }
   90% {
     transform: translate3d(0, 5px, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-.bounceInLeft {
-  animation-name: bounceInLeft;
-}
-@keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  0% {
-    opacity: 0;
-    transform: translate3d(-3000px, 0, 0);
-  }
-  60% {
-    opacity: 1;
-    transform: translate3d(25px, 0, 0);
-  }
-  75% {
-    transform: translate3d(-10px, 0, 0);
-  }
-  90% {
-    transform: translate3d(5px, 0, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-.bounceInRight {
-  animation-name: bounceInRight;
-}
-@keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  from {
-    opacity: 0;
-    transform: translate3d(3000px, 0, 0);
-  }
-  60% {
-    opacity: 1;
-    transform: translate3d(-25px, 0, 0);
-  }
-  75% {
-    transform: translate3d(10px, 0, 0);
-  }
-  90% {
-    transform: translate3d(-5px, 0, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
