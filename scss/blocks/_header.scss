@@ -1,24 +1,117 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background);
+  height: 70px;
+  border-bottom: 1px solid var(--color-dark-grey);
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.header--hidden {
+  top: -100px; /* um die gesamte Kopfzeile zu verstecken */
+}
+
 .header__nav {
-  margin-top: 30px;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 1fr auto 1fr;
+  }
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
   justify-self: flex-start;
-
-  @media (max-width: 960px) {
-    display: block;
-  }
 }
 
 .header__logo {
   justify-self: center;
+
+  @media screen and (min-width: 960px) {
+    justify-self: flex-start;
+  }
 }
 
 .header__search-button {
+  justify-self: flex-end;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  @media screen and (max-width: 960px) {
+    justify-content: flex-start;
+  }
+}
+
+.header__nav-item {
+  @media screen and (max-width: 960px) {
+    position: relative;
+    top: 150px;
+  }
+}
+
+.header__nav-link {
+  color: var(--color-grey);
+  font-family: var(--font-open-sans);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s;
+  position: relative;
+
+  &--active {
+    color: var(--color-white);
+  }
+
+  &--active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+  }
+}
+
+.header__nav-link:hover {
+  color: var(--color-white);
+}
+
+@media (max-width: 960px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header__nav {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .header__logo {
+    justify-self: flex-start;
+  }
+
+  .header__nav-list {
+    justify-self: center;
+  }
+
+  .header__nav-list {
+    display: none;
+  }
+}
+
+.header__search-button {
+  position: relative;
   justify-self: flex-end;
 }

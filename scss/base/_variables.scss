@@ -1,8 +1,10 @@
 :root {
   // ***** Colors *****
   --color-white: #fff;
+  --color-grey: #a99393;
   --color-accent: #b61313;
   --color-background: #141316;
+  --color-dark-grey: #242426;
 
   // ***** Fonts *****
   --font-roboto: "RobotoCondensed", sans-serif;
@@ -11,4 +13,7 @@
   // ***** Font Weights *****
   --font-weight-reg: 400;
   --font-weight-bold: 700;
+
+  // ***** Font Sizes *****
+  --font-size-small: 0.875rem;
 }

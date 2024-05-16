@@ -1,21 +1,27 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-background);
+  line-height: 1.7;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.none {
+  display: none;
 }
 
 a {
@@ -40,5 +46,5 @@ h2 {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
