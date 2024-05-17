@@ -51,6 +51,7 @@
               type="text"
               class="header__search-input"
               placeholder="Suche..."
+              aria-label="Suche"
             />
           </div>
         </nav>
@@ -59,8 +60,8 @@
     <main class="main">
       <div class="container">
         <section class="introduction" id="introduction-section">
-          <div class="introduction__content">
-            <div class="introduction__image">
+          <article class="introduction__content">
+            <figure class="introduction__image">
               <div class="introduction__iron-man-img">
                 <img src="./img/iron-man.png" alt="Iron Man in Aktion Pose" />
                 <img
@@ -69,19 +70,19 @@
                   class="introduction__bg-blur"
                 />
               </div>
-            </div>
+            </figure>
             <div class="introduction__text">
               <h1 class="introduction__title">
                 Marvel Universe <span>Fanseite</span>
               </h1>
               <p class="introduction__description">
                 Hier kannst du alles über deine Lieblingscharaktere, Filme und
-                Serien erfahren sowie die neuesten und Nachrichten und spannende
+                Serien erfahren sowie die neuesten Nachrichten und spannende
                 Hintergrundinformationen über das Universum lesen. Wir wünschen
                 dir viel Spaß!
               </p>
             </div>
-          </div>
+          </article>
         </section>
         <section class="explore">
           <div class="explore__grid-wrapper">
@@ -105,7 +106,7 @@
         </section>
 
         <section class="filme" id="filme-section">
-          <h2 class="filme___h2">Filme und Serien</h2>
+          <h2 class="filme__h2">Filme und Serien</h2>
           <ul class="filme__list">
             <li><img src="./img/hulk_img.jpg" alt="Film-Cover von Hulk" /></li>
             <li><img src="./img/thor_img.jpg" alt="Thor Film-Cover" /></li>
@@ -130,7 +131,7 @@
           <h2 class="heroes__h2">Helden</h2>
           <ul class="heroes__list">
             <li>
-              <div class="hero__item">
+              <figure class="hero__item">
                 <img
                   src="./img/captain_america.png"
                   alt="Captain America in Aktion Pose"
@@ -140,131 +141,154 @@
                   alt="Unscharfer Hintergrund hinter Captain America"
                   class="hero__bg-blur"
                 />
-              </div>
+              </figure>
             </li>
             <li>
-              <div class="hero__item">
+              <figure class="hero__item">
                 <img src="./img/thor.png" alt="Thor in Aktion Pose" />
                 <img
                   src="./img/bg-blur.png"
                   alt="Unscharfer Hintergrund hinter Thor"
                   class="hero__bg-blur"
                 />
-              </div>
+              </figure>
             </li>
             <li>
-              <div class="hero__item">
-                <img
-                  src="./img/rey_mysterio.png"
-                  alt="Rey Mysterio in Aktion Pose"
-                />
+              <figure class="hero__item">
+                <img src="./img/hawkeye.png" alt="Hawkeye in Aktion Pose" />
                 <img
                   src="./img/bg-blur.png"
-                  alt="Unscharfer Hintergrund hinter Rey Mysterio"
+                  alt="Unscharfer Hintergrund hinter Hawkeye"
                   class="hero__bg-blur"
                 />
-              </div>
+              </figure>
             </li>
             <li>
-              <div class="hero__item">
+              <figure class="hero__item">
                 <img src="./img/nebula.png" alt="Nebula in Aktion Pose" />
                 <img
                   src="./img/bg-blur.png"
                   alt="Unscharfer Hintergrund hinter Nebula"
                   class="hero__bg-blur"
                 />
-              </div>
+              </figure>
             </li>
           </ul>
         </section>
         <section class="news" id="news-section">
-          <h2 class="news__h2">
-            Neuigkeiten aus dem <span>Filmuniversum</span>
+          <h2 class="news__title">
+            Neuigkeiten aus dem
+            <span class="news__title-highlight">Filmuniversum</span>
           </h2>
           <ul class="news__list">
             <li class="news__list-item">
-              <h3 class="news-title">
-                Enthüllung der neuen "Black Widow" Solo-Mission in der MCU Phase
-                5
-              </h3>
-              <p class="news-description">
-                Marvels neuestes Projekt bringt Black Widow zurück in eine
-                Solo-Mission, die ihre Ursprünge und unerzählte Geschichten aus
-                ihrer Zeit vor den Avengers beleuchtet. Fans können eine
-                Mischung aus Spionage und tiefgreifenden Charakterentwicklungen
-                erwarten...
-              </p>
-              <p class="news-date">16.05.2024</p>
-              <a href="#" class="news-link">Mehr lesen</a>
+              <article class="news__item">
+                <h3 class="news__item-title">
+                  Enthüllung der neuen "Black Widow" Solo-Mission in der MCU
+                  Phase 5
+                </h3>
+                <p class="news__item-description">
+                  Marvels neuestes Projekt bringt Black Widow zurück in eine
+                  Solo-Mission, die ihre Ursprünge und unerzählte Geschichten
+                  aus ihrer Zeit vor den Avengers beleuchtet. Fans können eine
+                  Mischung aus Spionage und tiefgreifenden
+                  Charakterentwicklungen erwarten...
+                </p>
+                <time datetime="2024-05-16" class="news__item-date"
+                  >16.05.2024</time
+                >
+                <a href="#" class="news__item-link">Mehr lesen</a>
+              </article>
             </li>
             <li class="news__list-item">
-              <h3 class="news-title">
-                Ankündigung von "Doctor Strange im Multiversum des Wahnsinns"
-                Sequel
-              </h3>
-              <p class="news-description">
-                Marvel Studios kündigt die Fortsetzung von "Doctor Strange im
-                Multiversum des Wahnsinns" an. Das nächste Kapitel soll noch
-                tiefer in die unerforschten Ecken des Multiversums eintauchen
-                und unerwartete Verbündete und Gegner einführen...
-              </p>
-              <p class="news-date">16.05.2024</p>
-              <a href="#" class="news-link">Mehr lesen</a>
-            </li>
-
-            <li class="news__list-item">
-              <h3 class="news-title">
-                Spider-Man und Wolverine Team-Up angekündigt für nächstes
-                Marvel-Spektakel
-              </h3>
-              <p class="news-description">
-                Die Marvel-Fans dürfen sich auf ein episches Abenteuer freuen,
-                denn Spider-Man und Wolverine werden im nächsten Blockbuster zum
-                ersten Mal gemeinsam auf der großen Leinwand zu sehen sein...
-              </p>
-              <p class="news-date">16.05.2024</p>
-              <a href="#" class="news-link">Mehr lesen</a>
+              <article class="news__item">
+                <h3 class="news__item-title">
+                  Ankündigung von "Doctor Strange im Multiversum des Wahnsinns"
+                  Sequel
+                </h3>
+                <p class="news__item-description">
+                  Marvel Studios kündigt die Fortsetzung von "Doctor Strange im
+                  Multiversum des Wahnsinns" an. Das nächste Kapitel soll noch
+                  tiefer in die unerforschten Ecken des Multiversums eintauchen
+                  und unerwartete Verbündete und Gegner einführen...
+                </p>
+                <time datetime="2024-05-16" class="news__item-date"
+                  >16.05.2024</time
+                >
+                <a href="#" class="news__item-link">Mehr lesen</a>
+              </article>
             </li>
             <li class="news__list-item">
-              <h3 class="news-title">
-                Die zweite Episode von „Dunkler Phönix“ enthüllt neue Bösewichte
-              </h3>
-              <p class="news-description">
-                Die neueste Folge der X-Men-Saga bringt überraschende Wendungen,
-                indem sie einige der gefährlichsten Gegner in das Marvel
-                Universum einführt. Fans können eine tiefere und dunklere
-                Erkundung der Hintergrundgeschichten erwarten...
-              </p>
-              <p class="news-date">06.04.2022</p>
-              <a href="#" class="news-link">Mehr lesen</a>
+              <article class="news__item">
+                <h3 class="news__item-title">
+                  Spider-Man und Wolverine Team-Up angekündigt für nächstes
+                  Marvel-Spektakel
+                </h3>
+                <p class="news__item-description">
+                  Die Marvel-Fans dürfen sich auf ein episches Abenteuer freuen,
+                  denn Spider-Man und Wolverine werden im nächsten Blockbuster
+                  zum ersten Mal gemeinsam auf der großen Leinwand zu sehen
+                  sein...
+                </p>
+                <time datetime="2024-05-16" class="news__item-date"
+                  >16.05.2024</time
+                >
+                <a href="#" class="news__item-link">Mehr lesen</a>
+              </article>
             </li>
             <li class="news__list-item">
-              <h3 class="news-title">
-                Erstes Treffen zwischen Iron Man und Captain Britain im Marvel
-                Cinematic Universe
-              </h3>
-              <p class="news-description">
-                In einer überraschenden Entwicklung treffen zwei der
-                ikonischsten Figuren des Marvel Universums aufeinander. Dieses
-                Aufeinandertreffen verspricht nicht nur spektakuläre Action,
-                sondern auch spannende neue Storylines...
-              </p>
-              <p class="news-date">06.04.2022</p>
-              <a href="#" class="news-link">Mehr lesen</a>
+              <article class="news__item">
+                <h3 class="news__item-title">
+                  Die zweite Episode von „Dunkler Phönix“ enthüllt neue
+                  Bösewichte
+                </h3>
+                <p class="news__item-description">
+                  Die neueste Folge der X-Men-Saga bringt überraschende
+                  Wendungen, indem sie einige der gefährlichsten Gegner in das
+                  Marvel Universum einführt. Fans können eine tiefere und
+                  dunklere Erkundung der Hintergrundgeschichten erwarten...
+                </p>
+                <time datetime="2022-04-06" class="news__item-date"
+                  >06.04.2022</time
+                >
+                <a href="#" class="news__item-link">Mehr lesen</a>
+              </article>
             </li>
             <li class="news__list-item">
-              <h3 class="news-title">
-                James Gunn bestätigt fantastische Cameos in „Guardians of the
-                Galaxy 3“
-              </h3>
-              <p class="news-description">
-                Der Regisseur von "Guardians of the Galaxy 3" hat mehrere
-                Cameo-Auftritte von beliebten Figuren angekündigt. Diese
-                Ergänzungen sollen die Verbindung zu anderen Marvel Filmen
-                stärken und die Fan-Gemeinde begeistern...
-              </p>
-              <p class="news-date">06.04.2022</p>
-              <a href="#" class="news-link">Mehr lesen</a>
+              <article class="news__item">
+                <h3 class="news__item-title">
+                  Erstes Treffen zwischen Iron Man und Captain Britain im Marvel
+                  Cinematic Universe
+                </h3>
+                <p class="news__item-description">
+                  In einer überraschenden Entwicklung treffen zwei der
+                  ikonischsten Figuren des Marvel Universums aufeinander. Dieses
+                  Aufeinandertreffen verspricht nicht nur spektakuläre Action,
+                  sondern auch spannende neue Storylines...
+                </p>
+                <time datetime="2022-04-06" class="news__item-date"
+                  >06.04.2022</time
+                >
+                <a href="#" class="news__item-link">Mehr lesen</a>
+              </article>
+            </li>
+            <li class="news__list-item">
+              <article class="news__item">
+                <h3 class="news__item-title">
+                  James Gunn bestätigt fantastische Cameos in „Guardians of the
+                  Galaxy 3“
+                </h3>
+                <p class="news__item-description">
+                  Der Regisseur von "Guardians of the Galaxy 3" hat mehrere
+                  Cameo-Auftritte von beliebten Figuren angekündigt. Diese
+                  Ergänzungen sollen die Verbindung zu anderen Marvel Filmen
+                  stärken und die Fan-Gemeinde begeistern...
+                </p>
+                <time datetime="2022-04-06" class="news__item-date"
+                  >06.04.2022</time
+                >
+                <a href="#" class="news__item-link">Mehr lesen</a>
+              </article>
             </li>
           </ul>
         </section>
@@ -288,7 +312,6 @@
               <li class="footer__nav-item">
                 <a href="#heroes-section" class="footer__nav-link">Helden</a>
               </li>
-
               <li class="footer__nav-item">
                 <a href="#news-section" class="footer__nav-link">News</a>
               </li>
