@@ -11,10 +11,10 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 
-  @media screen and (max-width: 730px) {
-    padding: 0 20px;
+  @media screen and (min-width: 730px) {
+    padding: 0 40px;
   }
 }
 
@@ -35,6 +35,13 @@ a {
 
 li {
   list-style: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 img {

@@ -1,0 +1,34 @@
+.explore__grid-wrapper {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "text";
+
+  @media screen and (min-width: 960px) {
+    column-gap: 100px;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+      "image text"
+      "image text";
+  }
+}
+
+.explore__text {
+  grid-area: text;
+}
+
+.explore__img {
+  grid-area: image;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 960px) {
+    margin-bottom: 20px;
+    align-self: center;
+  }
+}
+
+.explore__description {
+  @media screen and (min-width: 960px) {
+    text-align: left;
+  }
+}

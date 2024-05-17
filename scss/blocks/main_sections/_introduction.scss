@@ -1,0 +1,65 @@
+.introduction__content {
+  margin-top: 70px;
+  display: grid;
+  row-gap: 30px;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  @media screen and (min-width: 730px) {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.introduction__image {
+  justify-self: center;
+  align-self: flex-end;
+  @media screen and (min-width: 730px) {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: flex-end;
+  }
+}
+
+.introduction__iron-man-img {
+  position: relative;
+}
+
+@keyframes growBlur {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.introduction__bg-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  animation: growBlur 5s forwards;
+}
+
+.introduction__text {
+  @media screen and (min-width: 960px) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.introduction__description,
+.explore__description {
+  font-family: var(--font-open-sans);
+  color: var(--color-white);
+  line-height: 1.7;
+  letter-spacing: 0.05rem;
+}
+
+.introduction__title span,
+.news span {
+  color: var(--color-accent);
+}

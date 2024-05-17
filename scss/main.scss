@@ -5,11 +5,15 @@
 
 // ******* BLOCKS *******
 @import "./blocks/_header.scss";
-@import "./blocks/_main.scss";
 @import "./blocks/_footer.scss";
+
+// ******* MAIN-SECTIONS *******
+@import "./blocks/main_sections/_introduction.scss";
+@import "./blocks/main_sections/_explore.scss";
+@import "./blocks/main_sections/filme.scss";
+@import "./blocks/main_sections/heroes.scss";
+@import "./blocks/main_sections/news.scss";
 
 // ******* COMPONENTS *******
 @import "./components/_fonts.scss";
 @import "./components/_hamburger.scss";
-@import "./components/_button.scss";
-@import "./components/animations.scss";

@@ -1,0 +1,38 @@
+.hero__item {
+  position: relative;
+
+  img {
+    transition: transform 0.5s;
+  }
+
+  img:hover {
+    transform: translate(0, -5px);
+  }
+}
+
+.hero__bg-blur {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  animation: growBlur 1s forwards;
+  display: none; /* Standardmäßig unsichtbar */
+}
+
+.hero__item:hover .hero__bg-blur {
+  display: block; /* Sichtbar beim Hover */
+}
+
+.heroes__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  gap: 20px;
+  justify-items: center;
+
+  @media screen and (min-width: 730px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

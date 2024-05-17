@@ -35,16 +35,17 @@
 }
 
 .footer__social {
+  display: flex;
+  flex-direction: column;
+
   grid-area: social;
   align-self: center;
   justify-self: flex-end;
-  display: flex;
   justify-content: center;
   column-gap: 30px;
 
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
