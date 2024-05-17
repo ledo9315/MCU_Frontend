@@ -34,19 +34,21 @@
   height: 70px;
 }
 
-.header__search-button {
+.header__search {
   position: relative;
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
   justify-self: flex-end;
+  z-index: 1009;
+}
+
+.header__search-button {
+  cursor: pointer;
 }
 
 .header__search-input {
-  position: absolute;
   right: -10px;
   top: 60px;
+
+  position: absolute;
   height: 40px;
   font-size: 16px;
   display: none; /* Verborgen bis der Button geklickt wird */
