@@ -1,5 +1,6 @@
 .explore__grid-wrapper {
   display: grid;
+  align-items: center;
   grid-template-areas:
     "image"
     "text";
@@ -13,6 +14,11 @@
   }
 }
 
+.explore__description {
+  @media screen and (min-width: 960px) {
+  }
+}
+
 .explore__text {
   grid-area: text;
 }
@@ -22,13 +28,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 960px) {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     align-self: center;
-  }
-}
-
-.explore__description {
-  @media screen and (min-width: 960px) {
-    text-align: left;
   }
 }

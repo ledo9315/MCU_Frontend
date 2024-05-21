@@ -176,7 +176,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -504,6 +504,9 @@ section {
 .introduction__iron-man-img {
   position: relative;
 }
+.introduction__iron-man-img img {
+  display: block;
+}
 
 @keyframes growBlur {
   0% {
@@ -545,6 +548,7 @@ section {
 
 .explore__grid-wrapper {
   display: grid;
+  align-items: center;
   grid-template-areas: "image" "text";
 }
 @media screen and (min-width: 960px) {
@@ -566,23 +570,15 @@ section {
 }
 @media screen and (min-width: 960px) {
   .explore__img {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     align-self: center;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .explore__description {
-    text-align: left;
   }
 }
 
 .filme__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
-  justify-items: center;
   gap: 20px;
-  perspective: 1000px; /* Hinzugefügt für 3D-Effekt */
 }
 @media screen and (min-width: 730px) {
   .filme__list {
@@ -600,6 +596,13 @@ section {
 }
 .filme__list li:hover {
   transform: scale(1.05);
+}
+.filme__list li img {
+  display: block;
+}
+
+.heroes__h2 {
+  margin-bottom: 20px;
 }
 
 .hero__item {
@@ -633,6 +636,7 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   gap: 20px;
   justify-items: center;
+  align-items: flex-end;
 }
 @media screen and (min-width: 730px) {
   .heroes__list {

@@ -1,3 +1,7 @@
+.heroes__h2 {
+  margin-bottom: 20px;
+}
+
 .hero__item {
   position: relative;
 
@@ -31,6 +35,7 @@
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
   gap: 20px;
   justify-items: center;
+  align-items: flex-end;
 
   @media screen and (min-width: 730px) {
     grid-template-columns: repeat(4, 1fr);

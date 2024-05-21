@@ -23,6 +23,10 @@
 
 .introduction__iron-man-img {
   position: relative;
+
+  img {
+    display: block;
+  }
 }
 
 @keyframes growBlur {

@@ -1,9 +1,7 @@
 .filme__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
-  justify-items: center;
   gap: 20px;
-  perspective: 1000px; /* Hinzugefügt für 3D-Effekt */
 
   @media screen and (min-width: 730px) {
     grid-template-columns: repeat(3, 1fr);
@@ -18,5 +16,9 @@
   transition: transform 0.5s;
   &:hover {
     transform: scale(1.05);
+  }
+
+  img {
+    display: block;
   }
 }
